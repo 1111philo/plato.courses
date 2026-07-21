@@ -125,7 +125,7 @@ const EduPartnerForm: React.FC = () => {
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">Get in Touch</h2>
                     <p className="text-gray-300 max-w-2xl mx-auto text-lg leading-relaxed">
-                        Interested in partnering with AI Leaders? Tell us about your institution and we'll schedule a conversation.
+                        Interested in partnering?
                     </p>
                 </div>
 

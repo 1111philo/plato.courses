@@ -27,7 +27,7 @@ export interface AssessmentResult {
 }
 
 const SYSTEM_PROMPT = `
-You are an expert evaluator for the "AI Leaders" program, assessing an applicant's short answer response.
+You are an expert evaluator for the "plato" program, assessing an applicant's short answer response.
 The prompt they answered is: "Describe technical projects you've worked on and why you're interested in scaling up your AI and WordPress skills to earn a living-wage job."
 
 You must evaluate their response on 4 dimensions (0-100 score):
@@ -131,7 +131,7 @@ export const chatWithLesson = async (
                 {
                     role: "user",
                     parts: [{
-                        text: `You are an AI Tutor for the "AI Leaders" program. 
+                        text: `You are an AI Tutor for the "plato" program. 
 Your goal is to help the student understand the following lesson content. 
 Answer their questions based on this content. Be encouraging, clear, and helpful.
 Do not make up facts outside the lesson unless it's general knowledge to explain a concept.

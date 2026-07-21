@@ -4,6 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import LessonAssessment from '../components/LessonAssessment';
 import LessonChat from '../components/LessonChat';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 interface Lesson {
     slug: string;
@@ -58,6 +59,8 @@ const LessonDetail: React.FC = () => {
 
         if (slug) loadLesson();
     }, [slug]);
+
+    usePageTitle(lesson?.title || 'Lesson');
 
     if (!lesson) {
         return <div className="text-center py-20">Loading lesson...</div>;

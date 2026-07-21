@@ -1,6 +1,8 @@
-# Contributing to AI Leaders
+# Contributing to plato.courses
 
-Thank you for your interest in contributing to AI Leaders! We're excited to have you join our community and help build the future of AI and WordPress education.
+Thank you for your interest in contributing to the plato marketing site! We're excited to have you join our community.
+
+> This repository is the **marketing site** ([plato.courses](https://plato.courses)). The plato application itself lives at **[github.com/1111philo/plato](https://github.com/1111philo/plato)**.
 
 ## How to Contribute
 
@@ -8,9 +10,9 @@ We welcome contributions of all types—from fixing typos in the documentation t
 
 ### Finding Something to Work On
 
-If you're looking for ways to contribute, please check our [GitHub Issues](https://github.com/1111philo/ai-leaders/issues).
+If you're looking for ways to contribute, please check our [GitHub Issues](https://github.com/1111philo/plato.courses/issues).
 
-If you have an idea for a new feature or have found a bug that isn't already listed, please [open a new issue](https://github.com/1111philo/ai-leaders/issues/new) to discuss it before starting work.
+If you have an idea for a new feature or have found a bug that isn't already listed, please [open a new issue](https://github.com/1111philo/plato.courses/issues/new) to discuss it before starting work.
 
 ### Your First Pull Request
 
@@ -32,8 +34,8 @@ This project is built to be "AI-native." We recommend using **Google Antigravity
 1. **Fork the repository**: Click the "Fork" button at the top right of this page to create your own copy.
 2. **Clone your fork**:
    ```bash
-   git clone https://github.com/your-username/ai-leaders.git
-   cd ai-leaders
+   git clone https://github.com/your-username/plato.courses.git
+   cd plato.courses
    ```
 3. **Set up the project**:
    ```bash
@@ -105,7 +107,7 @@ activities: "..."             # Learning steps
 ### Submitting Your PR
 
 Regardless of the method used, once your changes are pushed to your fork:
-1. Go to the original [AI Leaders repository](https://github.com/1111philo/ai-leaders).
+1. Go to the original [plato.courses repository](https://github.com/1111philo/plato.courses).
 2. You should see a banner saying "your-branch-name had recent pushes". Click **Compare & pull request**.
 3. Describe your changes clearly and link any related issues.
 

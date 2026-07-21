@@ -8,8 +8,10 @@ import OpenSourceCallout from '../components/OpenSourceCallout';
 import PlatoSection from '../components/PlatoSection';
 import Outcomes from '../components/Outcomes';
 import FAQ from '../components/FAQ';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 function Home() {
+    usePageTitle();
     const recaptchaKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
     return (

@@ -101,8 +101,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             path: '/employers',
             links: [
                 { name: 'Why Hire', href: '/employers#why', id: 'why' },
-                { name: 'The Platform', href: '/employers#platform', id: 'platform' },
-                { name: 'Hiring Process', href: '/employers#process', id: 'process' },
+                { name: 'Partnership Process', href: '/employers#process', id: 'process' },
                 { name: 'Get in Touch', href: '/employers#connect', id: 'connect' },
             ],
         },
@@ -197,7 +196,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                             <SlackIcon className="w-5 h-5" />
                         </a>
                         <a
-                            href="http://github.com/1111philo/ai-leaders/"
+                            href="https://github.com/1111philo/plato.courses/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-zinc-300 hover:text-white transition-colors"
@@ -208,7 +207,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                             </svg>
                         </a>
                         <a
-                            href="https://learn.ai-leaders.org/courses"
+                            href="https://app.plato.courses"
                             className="hidden md:inline-block text-zinc-300 hover:text-white transition-colors text-sm font-medium"
                         >
                             Login
@@ -275,7 +274,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                                     </div>
                                 ))}
                                 <a
-                                    href="https://learn.ai-leaders.org/courses"
+                                    href="https://app.plato.courses"
                                     className="block pt-2 border-t border-white/30 text-sm font-medium text-zinc-200 hover:text-white"
                                 >
                                     Login
@@ -300,7 +299,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                             <p className="text-zinc-300 text-sm">Harnessing the next generation of workforce leaders.</p>
                         </div>
                         <div className="text-gray-300 text-sm">
-                            Questions? Email <a href="mailto:help@ai-leaders.org" className="text-white hover:underline transition-all">help@ai-leaders.org</a>
+                            Questions? Email <a href="mailto:help@plato.courses" className="text-white hover:underline transition-all">help@plato.courses</a>
                         </div>
                     </div>
                 </div>

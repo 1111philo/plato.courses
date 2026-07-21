@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useProgress } from '../hooks/useProgress';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 interface Lesson {
     slug: string;
@@ -13,6 +14,7 @@ interface Lesson {
 }
 
 const Lessons: React.FC = () => {
+    usePageTitle('Curriculum');
     const [lessons, setLessons] = useState<Lesson[]>([]);
 
     useEffect(() => {

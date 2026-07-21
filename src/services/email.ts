@@ -25,7 +25,7 @@ export const sendEmail = async (data: EmailData): Promise<boolean> => {
         formData.append('from_name', data.name);
         formData.append('email', data.email);
         formData.append('message', data.message);
-        formData.append('to', 'help@ai-leaders.org');
+        formData.append('to', 'help@plato.courses');
 
         const response = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
@@ -56,7 +56,7 @@ export const sendEmployerInquiryEmail = async (data: {
     return sendEmail({
         name: `${data.name} from ${data.company}`,
         email: data.email,
-        subject: '🤝 New Employer Inquiry - AI Leaders',
+        subject: '🤝 New Employer Inquiry - plato',
         message: `
 New Employer Inquiry
 ━━━━━━━━━━━━━━━━━━━━━━
@@ -69,7 +69,7 @@ Roles / Needs:
 ${data.roles}
 
 ━━━━━━━━━━━━━━━━━━━━━━
-Sent from ai-leaders.org/employers
+Sent from plato.courses/employers
         `.trim()
     });
 };
@@ -83,7 +83,7 @@ export const sendEduPartnerInquiryEmail = async (data: {
     return sendEmail({
         name: `${data.name} from ${data.institution}`,
         email: data.email,
-        subject: '🎓 New EDU Partner Inquiry - AI Leaders',
+        subject: '🎓 New EDU Partner Inquiry - plato',
         message: `
 New EDU Partner Inquiry
 ━━━━━━━━━━━━━━━━━━━━━━
@@ -96,7 +96,7 @@ Message:
 ${data.message}
 
 ━━━━━━━━━━━━━━━━━━━━━━
-Sent from ai-leaders.org/edu-partners
+Sent from plato.courses/edu-partners
         `.trim()
     });
 };

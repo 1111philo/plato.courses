@@ -2,10 +2,6 @@ import React from 'react';
 
 const reasons = [
     {
-        title: "AI-Enabled",
-        body: "They bring their own judgment, amplified by fluency in prompting, agents, and LLM integration."
-    },
-    {
         title: "Production-Ready",
         body: "Hands-on, portfolio-backed experience shipping professional, scalable software and full-stack features."
     },
@@ -25,14 +21,14 @@ const WhyHire: React.FC = () => {
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
-                        Why Hire <span className="text-gray-300">plato Graduates.</span>
+                        What We <span className="text-gray-300">Offer</span>
                     </h2>
                     <p className="text-gray-300 text-lg leading-relaxed">
-                        Our graduates pair human judgment with AI leverage — the exact combination teams need to move faster without sacrificing quality.
+                        Our graduates know who they are and what we can do. We work with top institutions to find the graduates Employers need.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {reasons.map((reason) => (
                         <div
                             key={reason.title}

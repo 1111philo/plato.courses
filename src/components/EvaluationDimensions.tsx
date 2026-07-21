@@ -21,7 +21,7 @@ const EvaluationDimensions: React.FC<EvaluationDimensionsProps> = ({ stage, scor
         {
             id: 'clarity',
             title: 'Clarity',
-            initialComment: 'Clear, concise communication is essential for AI Leaders.',
+            initialComment: 'Clear, concise communication is essential for plato learners.',
             explanation: 'Structure is good, but consider breaking down your project descriptions into more distinct phases.',
             rubric: 'Good communication is key. We look for structure, clear language, and a logical flow that connects your skills to your goals.'
         },

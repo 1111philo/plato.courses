@@ -39,14 +39,14 @@ const FAQ: React.FC = () => {
         },
         {
             question: "Who can apply?",
-            answer: "AI Leaders is for those interested in exploring a career in technology."
+            answer: "plato is for those interested in exploring a career in technology."
         },
         {
             question: "How do I register, and how are participants selected?",
             answer: (
                 <div className="space-y-4">
                     <p>When a cohort is open for applications, the application will be added to this site. The application system immediately informs you if you are a strong candidate.</p>
-                    <p>Strong candidates are invited to register for an AI Leaders orientation. Orientation participants are introduced to the program and invited in.</p>
+                    <p>Strong candidates are invited to register for a cohort orientation. Orientation participants are introduced to the program and invited in.</p>
                     <p>On the platform, you can select courses. Top Learners are selected for outcomes, as availability allows.</p>
                 </div>
             )

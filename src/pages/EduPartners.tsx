@@ -5,8 +5,10 @@ import PartnerRequirements from '../components/edu/PartnerRequirements';
 import PartnershipProcess from '../components/edu/PartnershipProcess';
 import EduPartnerForm from '../components/edu/EduPartnerForm';
 import Partners from '../components/Partners';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 function EduPartnersPage() {
+    usePageTitle('For EDU Partners');
     const recaptchaKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
     return (

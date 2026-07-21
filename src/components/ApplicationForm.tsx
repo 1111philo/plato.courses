@@ -53,13 +53,13 @@ const ApplicationForm: React.FC = () => {
         const icsContent = [
             'BEGIN:VCALENDAR',
             'VERSION:2.0',
-            'PRODID:-//AI Leaders//Orientation//EN',
+            'PRODID:-//plato//Orientation//EN',
             'BEGIN:VEVENT',
-            'UID:' + Date.now() + '@ai-leaders.org',
+            'UID:' + Date.now() + '@plato.courses',
             'DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z',
             `DTSTART:${details.start}`,
             `DTEND:${details.end}`,
-            'SUMMARY:AI Leaders Orientation',
+            'SUMMARY:plato Cohort Orientation',
             `DESCRIPTION:Zoom Link: ${details.zoom}`,
             'LOCATION:Zoom',
             'END:VEVENT',
@@ -70,7 +70,7 @@ const ApplicationForm: React.FC = () => {
         const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = url;
-        link.setAttribute('download', 'AI-Leaders-Orientation.ics');
+        link.setAttribute('download', 'plato-Cohort-Orientation.ics');
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -290,7 +290,7 @@ const ApplicationForm: React.FC = () => {
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                                         <a
-                                            href={`https://www.google.com/calendar/render?action=TEMPLATE&text=AI+Leaders+Orientation&dates=${ORIENTATION_DETAILS[orientationSelection]?.googleDates}&details=Zoom+Link:+${encodeURIComponent(ORIENTATION_DETAILS[orientationSelection]?.zoom)}&location=Zoom`}
+                                            href={`https://www.google.com/calendar/render?action=TEMPLATE&text=plato+Cohort+Orientation&dates=${ORIENTATION_DETAILS[orientationSelection]?.googleDates}&details=Zoom+Link:+${encodeURIComponent(ORIENTATION_DETAILS[orientationSelection]?.zoom)}&location=Zoom`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="p-4 bg-white/5 border border-white/30 hover:bg-white/10 rounded-xl text-xs font-bold uppercase tracking-widest text-center transition-all flex items-center justify-center gap-2"

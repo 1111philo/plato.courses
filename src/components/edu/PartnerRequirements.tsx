@@ -3,7 +3,7 @@ import React from 'react';
 const requirements = [
     {
         title: "Dedicated Faculty Time",
-        body: "Commit faculty or staff to facilitate the program, guide students, and coordinate with AI Leaders support."
+        body: "Commit faculty or staff to facilitate the program, guide students, and coordinate with our support."
     },
     {
         title: "Technical Facilities",

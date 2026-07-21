@@ -1,6 +1,6 @@
 # Email Notification Setup
 
-The employer and EDU partner forms send notifications via email to `help@ai-leaders.org` using Web3Forms.
+The employer and EDU partner forms send notifications via email to `help@plato.courses` using Web3Forms.
 
 ## Setup Instructions
 
@@ -22,14 +22,14 @@ The employer and EDU partner forms send notifications via email to `help@ai-lead
 3. **Set Recipient Email in Web3Forms Dashboard**
    - Log into Web3Forms dashboard
    - Go to your form settings
-   - Set the recipient email to: `help@ai-leaders.org`
+   - Set the recipient email to: `help@plato.courses`
    - Enable email notifications
 
 ## How It Works
 
 When a form is submitted:
 
-1. **Email** → Sent to `help@ai-leaders.org` via Web3Forms
+1. **Email** → Sent to `help@plato.courses` via Web3Forms
 2. **Slack** → Posted to configured Slack channel (if enabled)
 3. **Google Sheets** → Logged to spreadsheet (if enabled)
 
@@ -39,7 +39,7 @@ All three methods run in parallel, so if one fails, the others still work.
 
 ### Employer Inquiries
 ```
-Subject: 🤝 New Employer Inquiry - AI Leaders
+Subject: 🤝 New Employer Inquiry - plato
 
 Company: [Company Name]
 Contact: [Contact Name]
@@ -51,7 +51,7 @@ Roles / Needs:
 
 ### EDU Partner Inquiries
 ```
-Subject: 🎓 New EDU Partner Inquiry - AI Leaders
+Subject: 🎓 New EDU Partner Inquiry - plato
 
 Institution: [Institution Name]
 Contact: [Contact Name]
@@ -72,7 +72,7 @@ VITE_DISABLE_EMAIL=true
 ## Troubleshooting
 
 - **Emails not sending**: Check that `VITE_WEB3FORMS_ACCESS_KEY` is set correctly
-- **Wrong recipient**: Verify email is set to `help@ai-leaders.org` in Web3Forms dashboard
+- **Wrong recipient**: Verify email is set to `help@plato.courses` in Web3Forms dashboard
 - **Form fails silently**: Check browser console for errors; email failures won't block form submission
 
 ## Alternative Email Services

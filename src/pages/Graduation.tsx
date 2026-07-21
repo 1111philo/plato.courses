@@ -1,4 +1,5 @@
 import React from 'react';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 interface Finalist {
     name: string;
@@ -62,6 +63,7 @@ const stats = [
 ];
 
 const Graduation: React.FC = () => {
+    usePageTitle('Graduation');
     return (
         <div className="bg-black text-white">
             <section className="pt-32 pb-16 relative overflow-hidden">
@@ -70,13 +72,13 @@ const Graduation: React.FC = () => {
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="max-w-3xl mx-auto text-center">
                         <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm">
-                            <span className="text-sm font-medium tracking-wide text-gray-300">AI Leaders · Class of 2026</span>
+                            <span className="text-sm font-medium tracking-wide text-gray-300">Cohort 1 · Class of 2026</span>
                         </div>
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
                             Finalist <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">Portfolios</span>
                         </h1>
                         <p className="text-gray-300 text-lg leading-relaxed">
-                            Explore the project portfolios built by this year's AI Leaders finalists. Click any card to open that student's work in a new tab.
+                            Explore the project portfolios built by this year's plato finalists. Click any card to open that student's work in a new tab.
                         </p>
                     </div>
 
@@ -133,7 +135,7 @@ const Graduation: React.FC = () => {
 
             <footer className="border-t border-white/10 py-8">
                 <div className="container mx-auto px-6 text-center text-sm text-gray-400">
-                    AI Leaders Program · Graduation 2026
+                    Graduation 2026
                 </div>
             </footer>
         </div>
