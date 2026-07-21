@@ -22,13 +22,14 @@ const tracks = [
         badgeClass: 'border-indigo-400/40 bg-indigo-500/10 text-indigo-200',
         body: (
             <>
+                Enter the{' '}
                 <a
                     href="https://philosophers.group/ai-leaders-final-course-job-search-feedback-loop/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white font-semibold underline underline-offset-4 hover:text-indigo-300 transition-colors"
                 >
-                    Enter the Job Search Feedback Loop
+                    Job Search Feedback Loop
                 </a>{' '}
                 to pursue a living-wage job that matches your experience.
             </>
