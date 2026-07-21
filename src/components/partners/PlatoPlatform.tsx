@@ -61,7 +61,7 @@ const PlatoPlatform: React.FC = () => {
                                 className="w-full h-auto rounded-2xl shadow-2xl border border-white/30"
                             />
                             <figcaption className="text-center text-sm text-gray-400 -mt-4">
-                                Plato's KPI-powered dashboard
+                                <strong className="font-bold text-gray-300">plato</strong>'s KPI-powered dashboard
                             </figcaption>
                         </figure>
 

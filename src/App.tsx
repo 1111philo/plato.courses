@@ -6,6 +6,7 @@ import Partners from './pages/Partners';
 import EduPartners from './pages/EduPartners';
 import Lessons from './pages/Lessons';
 import LessonDetail from './pages/LessonDetail';
+import Graduation from './pages/Graduation';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/edu-partners" element={<EduPartners />} />
           <Route path="/lessons" element={<Lessons />} />
           <Route path="/lessons/:slug" element={<LessonDetail />} />
+          <Route path="/graduation" element={<Graduation />} />
         </Routes>
       </Layout>
     </BrowserRouter>

@@ -30,12 +30,12 @@ const FaqItem: React.FC<{ question: string; answer: React.ReactNode }> = ({ ques
 const FAQ: React.FC = () => {
     const faqs = [
         {
-            question: "What is the AI Leader Program and what do I get?",
-            answer: "A remote workforce program that helps you earn a WordPress micro-credential and compete for living-wage WordPress job placement."
+            question: "What are plato courses and what do I get?",
+            answer: "A remote workforce program that leads you to living-wage job placement and paid internships."
         },
         {
             question: "How is this different from a bootcamp?",
-            answer: "AI Leaders is reflective by design. Bootcamps optimize for the day you get hired; we optimize for the years after. In our experience, people keep jobs longer when they've established who they are than when they're showcasing a stack of newly learned skills — so self-knowledge is built into the curriculum alongside the technical work."
+            answer: "Courses are reflective by design. Bootcamps optimize for the day you get hired; we optimize for the years after. In our experience, people keep jobs longer when they've established who they are than when they're showcasing a stack of newly learned skills — so self-knowledge is built into the curriculum alongside the technical work."
         },
         {
             question: "Who can apply?",
@@ -45,10 +45,9 @@ const FAQ: React.FC = () => {
             question: "How do I register, and how are participants selected?",
             answer: (
                 <div className="space-y-4">
-                    <p>Apply at AI-Leaders.org. The application system immediately informs you if you are a strong candidate.</p>
-                    <p>Register for an Orientation. Strong candidates are invited to register for an AI Leaders orientation.</p>
-                    <p>Attend an orientation. Orientation participants are introduced to the program and invited in.</p>
-                    <p>From the initial cohort, the 40 strongest are invited into the Full Credential — a paid opportunity to build a portfolio that competes for WordPress living-wage placements. It's designed for participants who've shown they're ready to harness their AI and WordPress powers in production work. Those who complete it earn a $1,000 honorarium.</p>
+                    <p>When a cohort is open for applications, the application will be added to this site. The application system immediately informs you if you are a strong candidate.</p>
+                    <p>Strong candidates are invited to register for an AI Leaders orientation. Orientation participants are introduced to the program and invited in.</p>
+                    <p>On the platform, you can select courses. Top Learners are selected for outcomes, as availability allows.</p>
                 </div>
             )
         },
@@ -71,7 +70,7 @@ const FAQ: React.FC = () => {
                         }}
                         className="text-white hover:text-gray-300 underline underline-offset-4 decoration-white/30 transition-colors"
                     >
-                        Subscribe for updates
+                        Signup for Updates
                     </a>
                     .
                 </p>

@@ -6,6 +6,7 @@ import ApplicationForm from '../components/ApplicationForm';
 import Advisors from '../components/Advisors';
 import OpenSourceCallout from '../components/OpenSourceCallout';
 import PlatoSection from '../components/PlatoSection';
+import Outcomes from '../components/Outcomes';
 import FAQ from '../components/FAQ';
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
             <Hero />
             <Partners />
             <About />
+            <Outcomes />
             <PlatoSection />
             <Advisors />
             <OpenSourceCallout />

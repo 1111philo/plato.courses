@@ -10,7 +10,7 @@ const GithubIcon = ({ className }: { className?: string }) => (
 const callouts = [
     {
         title: "Coaches, doesn't lecture",
-        body: "Plato asks the questions that surface what you already know, then helps you sharpen it."
+        body: "plato asks the questions that surface what you already know, then helps you sharpen it."
     },
     {
         title: "Reflective by design",
@@ -61,7 +61,7 @@ const PlatoSection: React.FC = () => {
                                 className="w-full h-auto rounded-2xl shadow-2xl border border-white/30"
                             />
                             <figcaption className="text-center text-sm text-gray-400 -mt-4">
-                                Plato's chat-based interface
+                                <strong className="font-bold text-gray-300">plato</strong>'s chat-based interface
                             </figcaption>
                         </figure>
 

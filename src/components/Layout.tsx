@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import AnnouncementBanner from './AnnouncementBanner';
+import PlatoLogo from './PlatoLogo';
 
 const SlackIcon = ({ className }: { className?: string }) => (
     <svg viewBox="0 0 16 16" fill="currentColor" className={className} aria-hidden="true">
@@ -89,6 +90,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             path: '/',
             links: [
                 { name: 'About', href: '/#about', id: 'about' },
+                { name: 'Outcomes', href: '/#outcomes', id: 'outcomes' },
                 { name: 'The Platform', href: '/#platform', id: 'platform' },
                 { name: 'Advisors', href: '/#advisors', id: 'advisors' },
                 { name: 'FAQ', href: '/#faq', id: 'faq' },
@@ -139,7 +141,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             </a>
             <nav aria-label="Main navigation" className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/80 backdrop-blur-md border-b border-white/30' : 'bg-transparent'}`}>
                 <div className="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
-                    <Link to="/" className="text-xl md:text-2xl font-bold tracking-tighter cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>AI LEADERS</Link>
+                    <Link to="/" className="cursor-pointer" aria-label="plato home" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><PlatoLogo className="h-7 md:h-8 w-auto text-white" /></Link>
                     <div className="hidden md:flex space-x-8 text-sm font-medium">
                         {primaryNav.map((item) => (
                             <div
@@ -284,7 +286,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 </AnimatePresence>
             </nav>
 
-            <AnnouncementBanner />
+            {location.pathname !== '/graduation' && <AnnouncementBanner />}
 
             <main id="main-content" className="flex-grow">
                 {children}
