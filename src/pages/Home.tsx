@@ -19,8 +19,8 @@ function Home() {
             <About />
             <Outcomes />
             <PlatoSection />
-            <Advisors />
             <OpenSourceCallout />
+            <Advisors />
             <FAQ />
             <ApplicationForm />
         </GoogleReCaptchaProvider>

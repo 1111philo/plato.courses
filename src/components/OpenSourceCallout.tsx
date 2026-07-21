@@ -39,7 +39,7 @@ const OpenSourceCallout: React.FC = () => {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-5xl mx-auto">
                     <div className="text-center md:text-left">
                         <h2 className="text-xl md:text-2xl font-bold text-white mb-2">
-                            AI Leaders is an Open Source Platform
+                            plato is an Open Source Platform
                         </h2>
                         <p className="text-zinc-300 text-sm md:text-base leading-relaxed max-w-xl">
                             Work toward a job while contributing to a platform others can use.
@@ -57,7 +57,7 @@ const OpenSourceCallout: React.FC = () => {
                             <span>Join our Slack</span>
                         </a>
                         <a
-                            href="https://github.com/1111philo/ai-leaders"
+                            href="https://github.com/1111philo/plato/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group relative inline-flex items-center gap-2 bg-white text-black px-6 py-2.5 rounded-full text-sm font-bold transition-all hover:scale-105 active:scale-95 whitespace-nowrap"

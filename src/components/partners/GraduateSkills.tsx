@@ -6,8 +6,8 @@ const skills = [
         body: "Prompting, agentic workflows, and LLM integration applied to real production tasks."
     },
     {
-        title: "WordPress Production",
-        body: "Building, theming, and maintaining professional, scalable WordPress sites."
+        title: "Web Production",
+        body: "Building, theming, and maintaining professional, scalable websites and web apps."
     },
     {
         title: "Full-Stack Development",

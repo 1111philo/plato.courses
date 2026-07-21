@@ -6,8 +6,8 @@ const reasons = [
         body: "They bring their own judgment, amplified by fluency in prompting, agents, and LLM integration."
     },
     {
-        title: "WordPress-Skilled",
-        body: "Hands-on, portfolio-backed experience building professional, scalable WordPress sites and full-stack features."
+        title: "Production-Ready",
+        body: "Hands-on, portfolio-backed experience shipping professional, scalable software and full-stack features."
     },
     {
         title: "Rigorously Vetted",
@@ -25,7 +25,7 @@ const WhyHire: React.FC = () => {
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
-                        Why Hire <span className="text-gray-300">AI Leaders.</span>
+                        Why Hire <span className="text-gray-300">plato Graduates.</span>
                     </h2>
                     <p className="text-gray-300 text-lg leading-relaxed">
                         Our graduates pair human judgment with AI leverage — the exact combination teams need to move faster without sacrificing quality.

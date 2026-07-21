@@ -18,7 +18,7 @@ const About: React.FC = () => {
                 <div className="flex flex-col md:flex-row gap-16 items-center">
                     <div className="md:w-1/2">
                         <h2 id="about-heading" className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
-                            Bridging the Gap to the <span className="text-gray-300">Future of Tech.</span>
+                            Bridging the Gap to <span className="text-gray-300">Your Workforce Potential.</span>
                         </h2>
                         <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
                             <p>
