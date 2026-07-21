@@ -391,7 +391,7 @@ const ApplicationForm: React.FC = () => {
                 <div className="max-w-2xl mx-auto">
                     {/* Center Column: The Form */}
                     <div className="w-full">
-                        <form id="subForm" className="js-cm-form bg-black border border-white/30 p-10 rounded-3xl shadow-2xl relative overflow-hidden" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="5B5E7037DA78A748374AD499497E309E0871BD843AA9E2CFA467A8A3E7853931272BD796FD1DE54DBBECCB9B003E01BAC1231EF71648E4A2F7E698E44C38A9E1">
+                        <form id="subForm" aria-label="Signup for updates" className="js-cm-form bg-black border border-white/30 p-10 rounded-3xl shadow-2xl relative overflow-hidden" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="5B5E7037DA78A748374AD499497E309E0871BD843AA9E2CFA467A8A3E7853931272BD796FD1DE54DBBECCB9B003E01BAC1231EF71648E4A2F7E698E44C38A9E1">
                             {/* Identity Fields */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                                 <div className="space-y-3">

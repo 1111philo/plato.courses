@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import AnnouncementBanner from './AnnouncementBanner';
@@ -15,6 +15,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [activeSection, setActiveSection] = useState<string>('');
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [routeAnnouncement, setRouteAnnouncement] = useState('');
+    const mainRef = useRef<HTMLElement>(null);
+    // Skip focus/announce on the very first render so we don't steal focus on load.
+    const isInitialRender = useRef(true);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -56,6 +60,22 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     useEffect(() => {
         setIsMobileMenuOpen(false);
     }, [location.pathname, location.hash]);
+
+    // On page (pathname) change, move focus to <main> and announce the new page
+    // so screen-reader users know navigation happened in this SPA. Keyed on
+    // pathname only — hash-only changes are handled by the smooth-scroll effect.
+    useEffect(() => {
+        if (isInitialRender.current) {
+            isInitialRender.current = false;
+            return;
+        }
+        mainRef.current?.focus();
+        // Defer the title read a tick so usePageTitle has set the new document.title.
+        const timer = setTimeout(() => {
+            setRouteAnnouncement(`Navigated to ${document.title}`);
+        }, 150);
+        return () => clearTimeout(timer);
+    }, [location.pathname]);
 
     // While the mobile menu is open, lock body scroll and allow Escape to close it.
     useEffect(() => {
@@ -157,7 +177,6 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                             >
                                 <Link
                                     to={item.path}
-                                    aria-haspopup="true"
                                     className={`transition-all duration-300 ${location.pathname === item.path
                                         ? 'text-white border-b border-white'
                                         : 'text-zinc-300 hover:text-white'
@@ -288,9 +307,14 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
             {location.pathname !== '/graduation' && <AnnouncementBanner />}
 
-            <main id="main-content" className="flex-grow">
+            <main id="main-content" ref={mainRef} tabIndex={-1} className="flex-grow focus:outline-none">
                 {children}
             </main>
+
+            {/* Polite live region: announces SPA page changes to screen readers. */}
+            <div aria-live="polite" role="status" className="sr-only">
+                {routeAnnouncement}
+            </div>
 
             <footer className="bg-black border-t border-white/30 py-12">
                 <div className="container mx-auto px-6">

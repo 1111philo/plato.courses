@@ -16,7 +16,7 @@ const OpenSourceCallout: React.FC = () => {
     return (
         <section className="relative bg-zinc-950 border-y border-white/30 py-12 overflow-hidden">
             {/* Dynamic Coding Background */}
-            <div className="absolute inset-0 z-0 pointer-events-none">
+            <div className="absolute inset-0 z-0 pointer-events-none" aria-hidden="true">
                 {/* Subtle Grid */}
                 <div className="absolute inset-0 opacity-[0.03]"
                     style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '40px 40px' }}

@@ -20,7 +20,7 @@ const FaqItem: React.FC<{ question: string; answer: React.ReactNode }> = ({ ques
                     </svg>
                 </span>
             </button>
-            <div id={contentId} className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
+            <div id={contentId} hidden={!isOpen} className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100 pb-6' : 'max-h-0 opacity-0'}`}>
                 <div className="text-gray-300 leading-relaxed max-w-2xl">{answer}</div>
             </div>
         </div>
@@ -70,7 +70,7 @@ const FAQ: React.FC = () => {
                         }}
                         className="text-white hover:text-gray-300 underline underline-offset-4 decoration-white/30 transition-colors"
                     >
-                        Signup for Updates
+                        Leave us your email
                     </a>
                     .
                 </p>
