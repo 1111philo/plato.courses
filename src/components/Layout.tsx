@@ -100,7 +100,8 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             name: 'For Employers',
             path: '/employers',
             links: [
-                { name: 'Why Hire', href: '/employers#why', id: 'why' },
+                { name: 'What We Offer', href: '/employers#why', id: 'why' },
+                { name: 'Case Study', href: '/employers#case-study', id: 'case-study' },
                 { name: 'Partnership Process', href: '/employers#process', id: 'process' },
                 { name: 'Get in Touch', href: '/employers#connect', id: 'connect' },
             ],
