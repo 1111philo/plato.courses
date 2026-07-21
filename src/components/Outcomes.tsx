@@ -73,7 +73,7 @@ const Outcomes: React.FC = () => {
                         href="#apply"
                         className="group inline-flex items-center gap-2 bg-white text-black px-8 py-3.5 rounded-full text-base font-bold transition-all hover:scale-105 active:scale-95"
                     >
-                        Sign Up
+                        Join a Cohort
                     </a>
                 </div>
             </div>
