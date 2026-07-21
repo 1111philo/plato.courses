@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 import type { TransparencyStage } from './EvaluationDimensions';
 import EvaluationDimensions from './EvaluationDimensions';
 import { analyzeApplication } from '../services/ai';
@@ -79,8 +78,6 @@ const ApplicationForm: React.FC = () => {
 
 
 
-    const { executeRecaptcha } = useGoogleReCaptcha();
-
     const [scores, setScores] = useState<Record<string, number>>({
         curiosity: 0,
         clarity: 0,
@@ -146,21 +143,7 @@ const ApplicationForm: React.FC = () => {
 
 
 
-        // 3. Captcha Check & Token Generation
-        if (!executeRecaptcha) {
-            console.warn("ReCAPTCHA has not yet loaded. Please try again in a moment.");
-            return;
-        }
-
-        const token = await executeRecaptcha?.('application_submit');
-        const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-
-        if (!token && !isLocalhost) {
-            alert("Security verification failed. Please try again.");
-            return;
-        }
-
-        // 4. Marketing Integration (Sync all information on every submission)
+        // 3. Marketing Integration (Sync all information on every submission)
         syncToGoogleSheet(formData);
 
         setIsAnalyzing(true);
@@ -682,39 +665,6 @@ const ApplicationForm: React.FC = () => {
                                     </div>
                                 )}
 
-                                <div className="space-y-4">
-                                    <div className="flex justify-between items-center px-2">
-                                        <p className="text-xs text-zinc-300 font-mono">
-                                            This site is protected by reCAPTCHA and the Google{' '}
-                                            <a
-                                                href="https://policies.google.com/privacy"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="underline hover:text-white"
-                                            >
-                                                Privacy Policy
-                                            </a>{' '}
-                                            and{' '}
-                                            <a
-                                                href="https://policies.google.com/terms"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="underline hover:text-white"
-                                            >
-                                                Terms of Service
-                                            </a>{' '}
-                                            apply.
-                                        </p>
-                                    </div>
-                                    {!import.meta.env.VITE_RECAPTCHA_SITE_KEY && (
-                                        <div className="p-4 bg-red-900/20 border border-red-500/30 rounded-xl text-center">
-                                            <p className="text-red-400 text-xs font-bold mb-1">Configuration Error</p>
-                                            <p className="text-gray-300 text-[10px] leading-relaxed">
-                                                ReCAPTCHA Site Key is missing. Check your <code className="text-white">.env</code> file.
-                                            </p>
-                                        </div>
-                                    )}
-                                </div>
                             </div>
 
                             <motion.button
@@ -722,7 +672,7 @@ const ApplicationForm: React.FC = () => {
                                 whileHover="hover"
                                 whileTap="tap"
                                 type="submit"
-                                disabled={isAnalyzing || !executeRecaptcha}
+                                disabled={isAnalyzing}
                                 className="group relative w-full font-black py-5 rounded-2xl border border-white/30 mt-4 text-xs tracking-[0.2em] uppercase overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center transition-colors duration-300 cursor-pointer"
                             >
                                 {/* 1. Pulsing Glow Layer */}

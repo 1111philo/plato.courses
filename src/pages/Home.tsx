@@ -1,4 +1,3 @@
-import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Partners from '../components/Partners';
@@ -12,10 +11,9 @@ import { usePageTitle } from '../hooks/usePageTitle';
 
 function Home() {
     usePageTitle();
-    const recaptchaKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
     return (
-        <GoogleReCaptchaProvider reCaptchaKey={recaptchaKey || ''}>
+        <>
             <Hero />
             <Partners />
             <About />
@@ -25,7 +23,7 @@ function Home() {
             <Advisors />
             <FAQ />
             <ApplicationForm />
-        </GoogleReCaptchaProvider>
+        </>
     );
 }
 

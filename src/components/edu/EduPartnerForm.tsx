@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 import { sendEduPartnerInquiry } from '../../services/notifications';
 import { sendEduPartnerInquiryEmail } from '../../services/email';
 import { syncToGoogleSheet } from '../../services/googleSheets';
@@ -18,7 +17,6 @@ const FieldError: React.FC<{ id?: string; message?: string }> = ({ id, message }
 };
 
 const EduPartnerForm: React.FC = () => {
-    const { executeRecaptcha } = useGoogleReCaptcha();
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
     const [errors, setErrors] = useState<Record<string, string>>({});
@@ -59,18 +57,6 @@ const EduPartnerForm: React.FC = () => {
             const firstErrorId = Object.keys(newErrors)[0];
             const element = document.getElementById(firstErrorId);
             if (element) element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            return;
-        }
-
-        if (!executeRecaptcha) {
-            console.warn("ReCAPTCHA has not yet loaded. Please try again in a moment.");
-            return;
-        }
-
-        const token = await executeRecaptcha('edu_partner_inquiry');
-        const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-        if (!token && !isLocalhost) {
-            alert("Security verification failed. Please try again.");
             return;
         }
 
@@ -192,27 +178,9 @@ const EduPartnerForm: React.FC = () => {
                         <FieldError id="message-error" message={errors.message} />
                     </div>
 
-                    <div className="space-y-4 mb-4">
-                        <p className="text-xs text-zinc-300 font-mono px-2">
-                            This site is protected by reCAPTCHA and the Google{' '}
-                            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Privacy Policy</a>{' '}
-                            and{' '}
-                            <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Terms of Service</a>{' '}
-                            apply.
-                        </p>
-                        {!import.meta.env.VITE_RECAPTCHA_SITE_KEY && (
-                            <div className="p-4 bg-red-900/20 border border-red-500/30 rounded-xl text-center">
-                                <p className="text-red-400 text-xs font-bold mb-1">Configuration Error</p>
-                                <p className="text-gray-300 text-[10px] leading-relaxed">
-                                    ReCAPTCHA Site Key is missing. Check your <code className="text-white">.env</code> file.
-                                </p>
-                            </div>
-                        )}
-                    </div>
-
                     <motion.button
                         type="submit"
-                        disabled={isSubmitting || !executeRecaptcha}
+                        disabled={isSubmitting}
                         className="group relative w-full font-black py-5 rounded-2xl border border-white/30 mt-4 text-xs tracking-[0.2em] uppercase overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center transition-colors duration-300 cursor-pointer hover:bg-white hover:text-black"
                     >
                         <motion.div
