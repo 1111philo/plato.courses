@@ -30,7 +30,7 @@ const tracks = [
                 >
                     Enter the Job Search Feedback Loop
                 </a>{' '}
-                to find a living-wage job that matches your experience.
+                to pursue a living-wage job that matches your experience.
             </>
         ),
     },

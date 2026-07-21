@@ -28,7 +28,7 @@ const PartnerBenefits: React.FC = () => {
                         What You <span className="text-gray-300">Receive.</span>
                     </h2>
                     <p className="text-gray-300 text-lg leading-relaxed">
-                        Everything you need to help students harness who they are and what they know — then connect to living-wage jobs.
+                        Everything you need to help students harness who they are and what they know — and prepare for living-wage jobs.
                     </p>
                 </div>
 

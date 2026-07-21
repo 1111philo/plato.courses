@@ -31,7 +31,7 @@ const FAQ: React.FC = () => {
     const faqs = [
         {
             question: "What are plato courses and what do I get?",
-            answer: "A remote workforce program that leads you to living-wage job placement and paid internships."
+            answer: "A remote workforce program that prepares you for living-wage jobs through courses and paid internships."
         },
         {
             question: "How is this different from a bootcamp?",
