@@ -91,7 +91,9 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         };
     }, [isMobileMenuOpen]);
 
-    // Smooth-scroll to the anchor after navigating to a page with a hash.
+    // Smooth-scroll to the anchor after navigating to a page with a hash;
+    // otherwise reset to the top so a new page doesn't inherit the previous
+    // page's scroll position.
     useEffect(() => {
         if (location.hash) {
             const id = location.hash.substring(1);
@@ -102,6 +104,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             }, 100);
             return () => clearTimeout(timer);
         }
+        window.scrollTo({ top: 0 });
     }, [location.pathname, location.hash]);
 
     const primaryNav = [
