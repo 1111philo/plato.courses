@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import maryPortrait from '../assets/mary.jpg';
 import blakePortrait from '../assets/blake.jpg';
 import stefinPortrait from '../assets/stefin.jpg';
 
@@ -12,13 +11,6 @@ const LinkedinIcon = ({ className }: { className?: string }) => (
 
 const Advisors: React.FC = () => {
     const advisors = [
-        {
-            name: "Mary Hubbard",
-            role: "Executive Director, WordPress",
-            image: maryPortrait,
-            bio: "Mary serves as the Executive Director of WordPress, leading the open-source project that powers over 40% of the web. With over 20 years of experience in product leadership and program management, she has held key roles at TikTok, eBay, and Automattic. Mary is a passionate advocate for open source sustainability and empowering the next generation of creators.",
-            linkedin: "https://www.linkedin.com/in/maryfhubbard/"
-        },
         {
             name: "Blake Bertuccelli-Booth",
             role: "Entrepreneur & Founder",

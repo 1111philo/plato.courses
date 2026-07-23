@@ -78,7 +78,7 @@ const Graduation: React.FC = () => {
                             Finalist <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">Portfolios</span>
                         </h1>
                         <p className="text-gray-300 text-lg leading-relaxed">
-                            Explore the project portfolios built by this year's plato finalists. Click any card to open that student's work in a new tab.
+                            Cohort One was designed to get students prepared for job placement. Explore the project portfolios built by Cohort One finalists.
                         </p>
                     </div>
 

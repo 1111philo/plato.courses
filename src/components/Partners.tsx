@@ -1,7 +1,6 @@
 
 import React from 'react';
 import uicLogo from '../assets/partner-uic.png';
-import wordpressLogo from '../assets/partner-wordpress.png';
 import latechLogo from '../assets/partner-latech.png';
 import ullLogo from '../assets/partner-ull.png';
 
@@ -11,11 +10,6 @@ const Partners: React.FC = () => {
             name: "University of Illinois Chicago",
             logo: uicLogo,
             url: "http://uic.edu/"
-        },
-        {
-            name: "WordPress",
-            logo: wordpressLogo,
-            url: "https://wordpress.org"
         },
         {
             name: "Louisiana Tech University",

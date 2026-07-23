@@ -9,11 +9,11 @@ const tracks = [
         body: "Earn a micro-credential that proves you know how to work with AI in a professional setting.",
     },
     {
-        name: 'WordPress Internship',
+        name: 'Open Source Internship',
         focus: 'Open Source Contribution',
         badge: 'For Undergraduates',
         badgeClass: 'border-emerald-400/40 bg-emerald-500/10 text-emerald-200',
-        body: 'Learn to ship real code and become a WordPress contributor.',
+        body: 'Learn to ship real code and become a code contributor.',
     },
     {
         name: 'Job Placement',
