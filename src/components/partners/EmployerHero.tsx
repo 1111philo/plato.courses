@@ -18,8 +18,8 @@ const EmployerHero: React.FC = () => {
                 </div>
 
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-8 bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent pb-2">
-                    Find Workforce <br className="hidden md:block" />
-                    Talent.
+                    Workforce Talent <br className="hidden md:block" />
+                    Pipeline
                 </h1>
 
                 <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">

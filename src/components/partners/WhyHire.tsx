@@ -2,16 +2,16 @@ import React from 'react';
 
 const reasons = [
     {
-        title: "Production-Ready",
-        body: "Hands-on, portfolio-backed experience shipping professional, scalable software and full-stack features."
+        title: "Institutional Partnerships",
+        body: "We partner with major universities and colleges to source candidates from a diverse, motivated talent pool — before they hit the open market."
     },
     {
-        title: "Rigorously Vetted",
-        body: "Graduates earn a micro-credential through real production work, not multiple-choice tests — proof, not promises."
+        title: "A Direct Pipeline",
+        body: "Tell us what you're building and we connect you with vetted, portfolio-backed candidates matched to your roles — proof of real production work, not promises."
     },
     {
-        title: "Built to Stay",
-        body: "Reflective by design: graduates spend as much time learning who they are as what they can do — so they integrate faster, adapt under change, and stay on teams longer."
+        title: "Future Workforce Leaders",
+        body: "Our courses cultivate leaders, not just hires: reflective by design, graduates integrate faster, adapt under change, and stay on teams longer."
     }
 ];
 
@@ -24,7 +24,7 @@ const WhyHire: React.FC = () => {
                         What We <span className="text-gray-300">Offer</span>
                     </h2>
                     <p className="text-gray-300 text-lg leading-relaxed">
-                        Our graduates know who they are and what we can do. We work with top institutions to find the graduates Employers need.
+                        <strong className="font-bold text-white">A pipeline for future talent.</strong> Work with major institutions to find talent and cultivate workforce leaders.
                     </p>
                 </div>
 

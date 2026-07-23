@@ -26,7 +26,7 @@ const Partners: React.FC = () => {
     return (
         <section id="partners" className="py-24 bg-zinc-950 border-y border-white/20">
             <div className="container mx-auto px-6 text-center">
-                <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-12">Our Partners</h2>
+                <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-12">A Project Of</h2>
 
                 <ul className="grid grid-cols-2 md:grid-cols-3 gap-6 list-none max-w-3xl mx-auto">
                     {partners.map((partner) => (
