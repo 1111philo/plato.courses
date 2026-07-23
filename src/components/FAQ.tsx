@@ -35,7 +35,7 @@ const FAQ: React.FC = () => {
         },
         {
             question: "How is this different from a bootcamp?",
-            answer: "Courses are reflective by design. Bootcamps optimize for the day you get hired; we optimize for the years after. In our experience, people keep jobs longer when they've established who they are than when they're showcasing a stack of newly learned skills — so self-knowledge is built into the curriculum alongside the technical work."
+            answer: "Our courses are built for reflection. Bootcamps optimize for the day you get hired; we optimize for the years after. We've found that people hold onto jobs longer when they know who they are, not just what they last learned — so self-knowledge is built into the curriculum alongside the technical work."
         },
         {
             question: "Who can apply?",

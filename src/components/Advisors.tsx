@@ -37,7 +37,7 @@ const Advisors: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 max-w-4xl mx-auto">
                     {advisors.map((advisor, idx) => (
                         <div key={idx} className="flex flex-col h-full">
                             <div className="aspect-[4/5] bg-zinc-900 rounded-xl mb-8 overflow-hidden relative border border-white/30">

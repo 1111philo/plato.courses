@@ -28,7 +28,7 @@ const Partners: React.FC = () => {
             <div className="container mx-auto px-6 text-center">
                 <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-12">Our Partners</h2>
 
-                <ul className="grid grid-cols-2 md:grid-cols-4 gap-6 list-none">
+                <ul className="grid grid-cols-2 md:grid-cols-3 gap-6 list-none max-w-3xl mx-auto">
                     {partners.map((partner) => (
                         <li key={partner.name}>
                             <a

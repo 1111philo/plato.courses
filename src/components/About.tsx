@@ -15,7 +15,7 @@ const About: React.FC = () => {
                                 <strong className="font-bold text-white">plato</strong> prepares students for living-wage jobs. Our 3-month cohorts pair self-guided lessons with real job placement opportunities.
                             </p>
                             <p>
-                                Courses are reflective by design. Most programs stack skills and hope a career follows. In our experience, people keep jobs longer when they've established <em>who they are</em> than when they're showcasing what they've just learned &mdash; tools change, the person using them is what lasts. So every lesson pairs the technical work with the reflective work, on purpose.
+                                Our courses are built for reflection. Most programs teach skill after skill and assume a career will follow. But we've found that people hold onto jobs longer when they know <em>who they are</em>, not just what they last learned &mdash; tools come and go, the person using them stays. That's why every lesson pairs technical work with reflection, on purpose.
                             </p>
                         </div>
                     </div>
